@@ -35,7 +35,7 @@ A cada `push` na branch `main`, o GitHub Actions (`.github/workflows/docker-publ
 ghcr.io/zoenlabs/sitenew:latest
 ```
 
-**1. Tornar o pacote público** (uma vez): `github.com/orgs/zoenlabs/packages` → `sitenew` → *Package settings* → *Change visibility* → **Public**. Assim a VPS baixa sem login. (Para manter privado, faça `docker login ghcr.io` na VPS com um PAT de escopo `read:packages`.)
+**1. Visibilidade do pacote:** o pacote já está **público** (a VPS baixa sem login). Se um dia torná-lo privado, faça `docker login ghcr.io` na VPS com um PAT de escopo `read:packages`.
 
 **2. Na VPS** (com Docker instalado):
 
