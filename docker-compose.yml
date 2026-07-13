@@ -1,0 +1,8 @@
+services:
+  zoenlabs:
+    build: .
+    image: zoenlabs-site:latest
+    container_name: zoenlabs-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
