@@ -41,4 +41,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.zoenlabs.com/sitemap.xml
+Sitemap: https://zoenlabs.com.br/sitemap.xml

@@ -7,6 +7,8 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Arquivos do site (cópia seletiva — sem Dockerfile/README/etc.)
 COPY index.html favicon.ico robots.txt sitemap.xml site.webmanifest /usr/share/nginx/html/
 COPY assets /usr/share/nginx/html/assets
+COPY termos /usr/share/nginx/html/termos
+COPY politica-de-privacidade /usr/share/nginx/html/politica-de-privacidade
 
 EXPOSE 80
 

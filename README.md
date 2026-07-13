@@ -57,7 +57,7 @@ docker image prune -f
 
 ### HTTPS
 
-- **Recomendado (vocês já usam Cloudflare):** aponte `zoenlabs.com` / `www` para o IP da VPS no Cloudflare com o **proxy ligado** (nuvem laranja) e SSL/TLS em *Full*. O Cloudflare emite o certificado e a VPS só serve HTTP na porta 80.
+- **Recomendado (vocês já usam Cloudflare):** aponte `zoenlabs.com.br` (e `www`) para o IP da VPS no Cloudflare com o **proxy ligado** (nuvem laranja) e SSL/TLS em *Full*. O Cloudflare emite o certificado e a VPS só serve HTTP na porta 80.
 - **Alternativa:** rode um Caddy/Traefik na frente (TLS automático via Let's Encrypt) e mude a porta do site para `8080:80` no `docker-compose.prod.yml`.
 
 ## Como rodar
@@ -171,14 +171,14 @@ Antes de publicar, substitua os placeholders:
 | O quê | Onde | Valor atual (placeholder) |
 |-------|------|---------------------------|
 | **Número do WhatsApp** | `index.html` (links `wa.me/...`) e `.whats-float` | `5500000000000` |
-| **E-mail de contato** | `index.html` (`mailto:` e rodapé) | `contato@zoenlabs.com` |
+| **E-mail de contato** | `index.html` (`mailto:` e rodapé) | `contato@zoenlabs.com.br` |
 | **Redes sociais** | Rodapé (`.footer__social`) | `href="#"` (Instagram/LinkedIn) |
 | **Cases reais** | Seção *Autoridade* | Área "em construção" |
 | **Logo (opcional)** | `.brand__mark` no `index.html` | SVG recriado do raio + `ZOENLABS` |
-| **Domínio** | `index.html` (canonical/OG/JSON-LD), `robots.txt`, `sitemap.xml` | `https://www.zoenlabs.com` |
+| **Domínio** | `index.html` (canonical/OG/JSON-LD), `robots.txt`, `sitemap.xml` | `https://zoenlabs.com.br` |
 | **Redes (JSON-LD)** | `sameAs` no JSON-LD do `index.html` | Instagram/LinkedIn placeholder |
 
-> **Importante:** o domínio `https://www.zoenlabs.com` é um **placeholder** e aparece em vários lugares (canonical, `og:url`, `og:image`, Twitter, JSON-LD, `robots.txt`, `sitemap.xml`). Troque por Localizar/Substituir quando o domínio final estiver definido. As URLs de imagem no Open Graph **precisam ser absolutas** (com o domínio real) para o WhatsApp exibir o preview.
+> **Importante:** o domínio `https://zoenlabs.com.br` é um **placeholder** e aparece em vários lugares (canonical, `og:url`, `og:image`, Twitter, JSON-LD, `robots.txt`, `sitemap.xml`). Troque por Localizar/Substituir quando o domínio final estiver definido. As URLs de imagem no Open Graph **precisam ser absolutas** (com o domínio real) para o WhatsApp exibir o preview.
 
 Dica: os números de WhatsApp aparecem em 4 lugares — use "localizar e substituir" por `5500000000000`.
 
