@@ -4,7 +4,7 @@ Landing page de posicionamento digital da **ZoenLabs**: transformação digital 
 
 > **Mensagem central:** Quanta receita a tecnologia ainda não gerou para o seu negócio?
 >
-> **Objetivo da página:** agendar a sessão estratégica gratuita de 30 minutos (formulário em `#aplicacao`; a URL curta `/sessao-estrategica` redireciona para lá).
+> **Objetivo da página:** agendar a sessão estratégica gratuita de 30 minutos (formulário em `#aplicacao`; a URL curta `/sessao-estrategica` redireciona para lá, via `vercel.json` na Vercel ou `nginx.conf` no Docker).
 
 ### Formulário de aplicação
 
