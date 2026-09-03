@@ -1,8 +1,17 @@
 # ZoenLabs — Landing Page
 
-Landing page de reposicionamento de marca da **ZoenLabs**, uma *software house & product builder*.
+Landing page de posicionamento digital da **ZoenLabs**: transformação digital com dono.
 
-> **Mensagem central:** Tecnologia com vida. Produtos digitais com propósito.
+> **Mensagem central:** Quanta receita a tecnologia ainda não gerou para o seu negócio?
+>
+> **Objetivo da página:** agendar a sessão estratégica gratuita de 30 minutos (formulário em `#aplicacao`; a URL curta `/sessao-estrategica` redireciona para lá, via `vercel.json` na Vercel ou `nginx.conf` no Docker).
+
+### Formulário de aplicação
+
+O site é estático. O envio do formulário é controlado em `assets/js/main.js`:
+
+- `FORM_ENDPOINT` vazio (padrão): ao enviar, abre o WhatsApp da ZoenLabs com a aplicação já preenchida e oferece e-mail como alternativa.
+- `FORM_ENDPOINT` preenchido (Formspree, n8n, Make, Zapier, Apps Script…): faz `POST` JSON com os campos `nome, email, telefone, empresa, objetivo, papel, faturamento, impacto, lgpd, origem, enviadoEm`. Se o POST falhar, cai no WhatsApp/e-mail.
 
 Página estática, responsiva e sem dependências de build. Basta abrir ou servir os arquivos.
 
