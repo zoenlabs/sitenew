@@ -85,6 +85,7 @@
           "Gestão executiva de projetos de tecnologia",
           "Método PONTE (Plano, Orquestração, Navegação, Transferência, Evolução)",
           "Sustentação e evolução contínua de sistemas",
+          "E-commerce integrado e automação de operação (marketplaces, logística, ERP e atendimento)",
           "Advisory em investimentos tecnológicos e M&A"
         ],
         "contactPoint": {
@@ -140,8 +141,8 @@
           },
           {
             "@type": "Question",
-            "name": "Que projeto a ZoenLabs está construindo hoje?",
-            "acceptedAnswer": { "@type": "Answer", "text": "A LiveCars (livecars.com.br), marketplace que vai transformar a compra de carros com vendas em lives, em tempo real, e compra segura. A ZoenLabs conduz o projeto do caso de negócio ao squad completo, com o método PONTE." }
+            "name": "Quais projetos a ZoenLabs já entregou ou está construindo?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A LiveCars (livecars.com.br), marketplace que vai transformar a compra de carros com vendas em lives, em tempo real, e compra segura. Também entregamos o e-commerce da Lymr (lymr.com.br), loja de creatina em gummies com integrações a Bling, FastLog, Mercado Livre, Shopee, Meta com loja no Instagram e WhatsApp com IA, além da consultoria que mapeou todo o processo de negócio." }
           },
           {
             "@type": "Question",
@@ -164,7 +165,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=10" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -507,7 +508,10 @@
           </article>
         </div>
 
-        <article class="case reveal" data-reveal-delay="2" aria-labelledby="case-livecars">
+        <div class="cases reveal" id="cases" data-reveal-delay="2" data-autoplay="7000"
+             role="region" aria-roledescription="carrossel" aria-label="Cases da ZoenLabs">
+          <div class="cases__viewport" id="casesViewport">
+                  <article class="case is-active" id="slide-livecars" role="group" aria-roledescription="slide" aria-label="1 de 2: LiveCars" aria-labelledby="case-livecars">
           <div class="case__media">
             <img src="assets/img/livecars-logo.png" alt="Logo LiveCars: ao vivo, em tempo real" width="640" height="441" loading="lazy" decoding="async" />
           </div>
@@ -534,8 +538,51 @@
           </div>
         </article>
 
+          <article class="case" id="slide-lymr" role="group" aria-roledescription="slide" aria-label="2 de 2: Lymr" aria-labelledby="case-lymr" hidden>
+            <div class="case__media case__media--shot">
+              <img src="assets/img/lymr-case.jpg" alt="Loja online da Lymr, com creatina em gummies e destaque de descontos" width="1600" height="770" loading="lazy" decoding="async" />
+            </div>
+            <div class="case__body">
+              <div class="case__meta">
+                <span class="case__tag">Case</span>
+                <span class="case__status"><span class="dot dot--live"></span> No ar</span>
+              </div>
+              <h3 id="case-lymr">Lymr: <span class="text-accent">um e-commerce que opera sozinho</span></h3>
+              <p class="case__lead">
+                Montamos o e-commerce da Lymr, loja de creatina em gummies, com
+                integração em todas as frentes de venda e operação. O resultado é
+                uma estrutura automatizada, que gera receita com baixa
+                complexidade operacional.
+              </p>
+              <ul class="case__points">
+                <li><strong>Consultoria:</strong> mapeamos e desenhamos todo o processo de negócio antes de ligar a operação.</li>
+                <li><strong>Integrações:</strong> Bling, FastLog, Mercado Livre, Shopee, Meta com loja no Instagram e WhatsApp com IA.</li>
+                <li><strong>Operação:</strong> construção, customização e integração das plataformas, ponta a ponta.</li>
+              </ul>
+              <a class="case__link" href="https://lymr.com.br" target="_blank" rel="noopener">
+                Conhecer a Lymr
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+          </div>
+
+          <div class="cases__nav">
+            <button class="cases__arrow" type="button" data-case-dir="-1" aria-label="Case anterior" aria-controls="casesViewport">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="cases__dots" role="tablist" aria-label="Escolher case">
+              <button class="cases__dot is-active" type="button" role="tab" aria-selected="true" aria-controls="slide-livecars"><span class="cases__dot-fill"></span><span class="sr-only">LiveCars</span></button>
+              <button class="cases__dot" type="button" role="tab" aria-selected="false" aria-controls="slide-lymr"><span class="cases__dot-fill"></span><span class="sr-only">Lymr</span></button>
+            </div>
+            <button class="cases__arrow" type="button" data-case-dir="1" aria-label="Próximo case" aria-controls="casesViewport">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+
         <!--
-          [validar] Depoimento do cliente LiveCars ou métrica citável (quando autorizado):
+          [validar] Depoimento de cliente (LiveCars ou Lymr) ou métrica citável, quando autorizado:
           inserir um <figure class="testimonial"> com citação, nome, cargo e empresa.
         -->
       </div>
@@ -802,6 +849,6 @@
     <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.7 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2 0-1.5.8-2.3 1-2.6.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.5 2 2.4 1.4 1.2 2.4 1.5 2.7 1.7.3.1.5.1.7-.1l.8-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.4Z"/></svg>
   </a>
 
-  <script src="assets/js/main.js?v=5"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>
