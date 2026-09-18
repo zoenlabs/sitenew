@@ -3,7 +3,7 @@
    - Reveal on scroll (IntersectionObserver)
    - Nav com fundo ao rolar + menu mobile
    - Ano dinâmico no rodapé + scroll suave com offset do header
-   - Formulário de aplicação para a sessão estratégica
+   - Carrossel de cases + formulário de aplicação para a sessão estratégica
    ========================================================================== */
 (function () {
   "use strict";
@@ -143,7 +143,76 @@
     }
   }
 
-  /* ---------- 6. Formulário de aplicação ----------
+  /* ---------- 6. Carrossel de cases ----------
+     Alterna automaticamente entre os cases, pausa ao passar o mouse, ao focar
+     com o teclado e quando a aba está em segundo plano. Respeita a preferência
+     por menos movimento: sem troca automática, só navegação manual. */
+  var cases = document.getElementById("cases");
+
+  if (cases) {
+    var slides = [].slice.call(cases.querySelectorAll(".case"));
+    var dots = [].slice.call(cases.querySelectorAll(".cases__dot"));
+    var arrows = [].slice.call(cases.querySelectorAll("[data-case-dir]"));
+    var duration = parseInt(cases.getAttribute("data-autoplay"), 10) || 7000;
+    var current = 0;
+    var timer = null;
+    var paused = false;
+
+    cases.style.setProperty("--case-duration", duration + "ms");
+
+    function show(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, i) {
+        var active = i === current;
+        slide.classList.toggle("is-active", active);
+        slide.hidden = !active;
+        slide.setAttribute("aria-hidden", String(!active));
+      });
+      dots.forEach(function (dot, i) {
+        var active = i === current;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", String(active));
+      });
+      restart();
+    }
+
+    function restart() {
+      if (timer) { clearTimeout(timer); timer = null; }
+      cases.classList.remove("is-playing");
+      if (prefersReduced || paused || slides.length < 2) return;
+      // reinicia a animação da barra de progresso
+      void cases.offsetWidth;
+      cases.classList.add("is-playing");
+      timer = setTimeout(function () { show(current + 1); }, duration);
+    }
+
+    function pause() { paused = true; restart(); }
+    function resume() { paused = false; restart(); }
+
+    arrows.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        show(current + parseInt(btn.getAttribute("data-case-dir"), 10));
+      });
+    });
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () { show(i); });
+    });
+
+    cases.addEventListener("mouseenter", pause);
+    cases.addEventListener("mouseleave", resume);
+    cases.addEventListener("focusin", pause);
+    cases.addEventListener("focusout", function (e) {
+      if (!cases.contains(e.relatedTarget)) resume();
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) { paused = true; restart(); }
+      else { paused = false; restart(); }
+    });
+
+    show(0);
+  }
+
+  /* ---------- 7. Formulário de aplicação ----------
      O site é estático. Configure FORM_ENDPOINT com a URL de um serviço que
      receba POST JSON (ex.: Formspree, n8n, Make, Zapier, Google Apps Script).
      Sem endpoint, a aplicação é encaminhada pelo WhatsApp da ZoenLabs com o
@@ -287,7 +356,7 @@
     });
   }
 
-  /* ---------- 7. Ano dinâmico ---------- */
+  /* ---------- 8. Ano dinâmico ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 })();
