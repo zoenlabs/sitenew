@@ -50,5 +50,5 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-# Resumo do site para modelos de linguagem: /llms.txt e /llms-full.txt
+# Resumo do site para modelos de linguagem: /llms.txt
 Sitemap: https://www.zoenlabs.com.br/sitemap.xml
