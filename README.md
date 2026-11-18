@@ -177,19 +177,29 @@ Breakpoints principais: **1024px** (tablet — grids reduzem colunas, hero empil
 
 Antes de publicar, substitua os placeholders:
 
-| O quê | Onde | Valor atual (placeholder) |
-|-------|------|---------------------------|
-| **Número do WhatsApp** | `index.html` (links `wa.me/...`) e `.whats-float` | `5500000000000` |
-| **E-mail de contato** | `index.html` (`mailto:` e rodapé) | `contato@zoenlabs.com.br` |
-| **Redes sociais** | Rodapé (`.footer__social`) | `href="#"` (Instagram/LinkedIn) |
-| **Cases reais** | Seção *Autoridade* | Área "em construção" |
-| **Logo (opcional)** | `.brand__mark` no `index.html` | SVG recriado do raio + `ZOENLABS` |
-| **Domínio** | `index.html` (canonical/OG/JSON-LD), `robots.txt`, `sitemap.xml` | `https://zoenlabs.com.br` |
-| **Redes (JSON-LD)** | `sameAs` no JSON-LD do `index.html` | Instagram/LinkedIn placeholder |
+## SEO e indexação
 
-> **Importante:** o domínio `https://zoenlabs.com.br` é um **placeholder** e aparece em vários lugares (canonical, `og:url`, `og:image`, Twitter, JSON-LD, `robots.txt`, `sitemap.xml`). Troque por Localizar/Substituir quando o domínio final estiver definido. As URLs de imagem no Open Graph **precisam ser absolutas** (com o domínio real) para o WhatsApp exibir o preview.
+O domínio canônico é **`https://www.zoenlabs.com.br`**, porque é o que a Vercel serve: o apex (`zoenlabs.com.br`) responde 308 e redireciona para o `www`. Canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt` apontam todos para o `www`, para não enviar sinais conflitantes ao Google.
 
-Dica: os números de WhatsApp aparecem em 4 lugares — use "localizar e substituir" por `5500000000000`.
+> Se preferir o domínio sem `www`, troque o domínio principal no painel da Vercel e faça um localizar/substituir de `https://www.zoenlabs.com.br` por `https://zoenlabs.com.br` nos arquivos acima.
+
+Arquivos de indexação:
+
+| Arquivo | Serve para |
+|---|---|
+| `robots.txt` | Libera buscadores e crawlers de IA (GPTBot, ClaudeBot, PerplexityBot, Applebot, entre outros) e aponta o sitemap |
+| `sitemap.xml` | Lista as três páginas, com extensões de **imagem** e de **vídeo** para a home |
+| `llms.txt` | Resumo do negócio em texto para modelos de linguagem (posicionamento, oferta, método PONTE, cases, contatos) |
+| `assets/img/video-thumb.jpg` | Miniatura do vídeo institucional, usada no `poster`, no JSON-LD e no sitemap de vídeo |
+
+O vídeo institucional fica no Cloudflare R2 e é declarado em `VideoObject` no JSON-LD, com `thumbnailUrl`, `uploadDate`, `duration` e `contentUrl`, além das tags `og:video`. Sem isso o Google não tinha como indexá-lo.
+
+### Depois de publicar
+
+1. No Google Search Console, cadastre a propriedade `https://www.zoenlabs.com.br` e envie `sitemap.xml`.
+2. Use a Inspeção de URL para pedir a indexação da home.
+3. No Bing Webmaster Tools, repita o envio do sitemap.
+4. Confira o resultado do vídeo em Search Console, em Vídeos, alguns dias depois.
 
 ---
 
