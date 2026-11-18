@@ -177,6 +177,33 @@ Breakpoints principais: **1024px** (tablet — grids reduzem colunas, hero empil
 
 Antes de publicar, substitua os placeholders:
 
+## Estrutura de páginas
+
+Além da landing page, o site tem páginas próprias por serviço e por case, cada uma com título, descrição, canonical, Open Graph e dados estruturados próprios. São elas que podem ranquear por termo de busca, já que a home ranqueia pela marca.
+
+```
+/                                        landing page (sessão estratégica)
+/servicos                                índice dos serviços
+/servicos/plataformas-digitais
+/servicos/marketplaces-e-ecommerce
+/servicos/modernizacao-de-sistemas
+/servicos/integracoes-e-automacao
+/servicos/sustentacao-e-evolucao
+/servicos/advisory-tecnologia-ma
+/cases                                   índice dos cases
+/cases/livecars
+/cases/lymr
+/termos  /politica-de-privacidade
+```
+
+Cada página de serviço traz: o que entregamos, para quem é, como conduzimos pelo método PONTE e um bloco de perguntas frequentes, que vira `FAQPage` nos dados estruturados. Cada case traz contexto, o que a ZoenLabs fez, ficha do projeto e links para os serviços envolvidos.
+
+As páginas internas usam `assets/js/pages.js` (menu mobile, nav ao rolar e ano do rodapé). A landing continua com `assets/js/main.js`.
+
+### Como adicionar uma página nova
+
+As páginas foram geradas por um script a partir de um template único, para manter o padrão. Para criar outra, o caminho mais simples é copiar o `index.html` de um serviço existente e trocar: `<title>`, `description`, `canonical`, Open Graph, o bloco JSON-LD (incluindo `BreadcrumbList` e `Service`), o conteúdo e os links. Depois é só incluir a URL no `sitemap.xml` e no `llms.txt`.
+
 ## SEO e indexação
 
 O domínio canônico é **`https://www.zoenlabs.com.br`**, porque é o que a Vercel serve: o apex (`zoenlabs.com.br`) responde 308 e redireciona para o `www`. Canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt` apontam todos para o `www`, para não enviar sinais conflitantes ao Google.

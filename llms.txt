@@ -43,12 +43,22 @@ Método próprio da ZoenLabs, em cinco etapas:
 
 ## Cases
 
-- **LiveCars** (https://livecars.com.br) — marketplace que transforma a compra de carros com vendas em lives, em tempo real, e jornada de compra segura. Em desenvolvimento: caso de negócio, squad completo e gestão da ZoenLabs.
-- **Lymr** (https://lymr.com.br) — e-commerce de creatina em gummies, no ar, com consultoria de processo de negócio e integrações a Bling, FastLog, Mercado Livre, Shopee, Meta com loja no Instagram e WhatsApp com IA. Estrutura automatizada, com baixa complexidade operacional.
+- **LiveCars** (https://livecars.com.br · case: https://www.zoenlabs.com.br/cases/livecars) — marketplace que transforma a compra de carros com vendas em lives, em tempo real, e jornada de compra segura. Em desenvolvimento: caso de negócio, squad completo e gestão da ZoenLabs.
+- **Lymr** (https://lymr.com.br · case: https://www.zoenlabs.com.br/cases/lymr) — e-commerce de creatina em gummies, no ar, com consultoria de processo de negócio e integrações a Bling, FastLog, Mercado Livre, Shopee, Meta com loja no Instagram e WhatsApp com IA. Estrutura automatizada, com baixa complexidade operacional.
 
 ## Páginas
 
 - [Início](https://www.zoenlabs.com.br/): posicionamento, método PONTE, cases e formulário da sessão estratégica
+- [Serviços](https://www.zoenlabs.com.br/servicos): índice das seis frentes de trabalho
+- [Plataformas e produtos digitais](https://www.zoenlabs.com.br/servicos/plataformas-digitais)
+- [Marketplaces e e-commerce integrado](https://www.zoenlabs.com.br/servicos/marketplaces-e-ecommerce)
+- [Modernização de sistemas](https://www.zoenlabs.com.br/servicos/modernizacao-de-sistemas)
+- [Integrações e automação com IA](https://www.zoenlabs.com.br/servicos/integracoes-e-automacao)
+- [Sustentação e evolução contínua](https://www.zoenlabs.com.br/servicos/sustentacao-e-evolucao)
+- [Advisory em tecnologia e M&A](https://www.zoenlabs.com.br/servicos/advisory-tecnologia-ma)
+- [Cases](https://www.zoenlabs.com.br/cases): índice dos projetos
+- [Case LiveCars](https://www.zoenlabs.com.br/cases/livecars)
+- [Case Lymr](https://www.zoenlabs.com.br/cases/lymr)
 - [Termos de Uso](https://www.zoenlabs.com.br/termos)
 - [Política de Privacidade](https://www.zoenlabs.com.br/politica-de-privacidade)
 
