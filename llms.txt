@@ -1,0 +1,63 @@
+# ZoenLabs
+
+> Software house e consultoria de transformação digital no Brasil. Ajudamos negócios a se desenvolverem e monetizarem em cima de tecnologia, nova ou já existente: do caso de negócio à plataforma no ar, com squad completo, gestão de nível executivo e evolução contínua depois da entrega.
+
+Posicionamento: transformação digital com dono. Não é terceirização de desenvolvimento: alguém de nível executivo responde pelo resultado do início ao fim.
+
+- Site: https://www.zoenlabs.com.br
+- Fundador: Edson Rochedo, 15 anos como executivo em grandes empresas; também atua como advisor em investimentos tecnológicos e diligências de M&A.
+- Contato: contato@zoenlabs.com.br · WhatsApp +55 19 99573-5894
+- Atendimento: Brasil, em português.
+- Atualizado em: 18/11/2026
+
+## Para quem
+
+Donos, sócios e diretores de empresas em crescimento que têm uma ideia de plataforma parada na gaveta, ou um sistema que só gera custo quando deveria gerar resultado, e que não querem montar e gerenciar um time de tecnologia por conta própria.
+
+## Oferta principal
+
+Sessão estratégica gratuita de 30 minutos, online. Mapeamos onde a tecnologia pode gerar ou destravar receita no negócio. O participante sai com três entregas: mapa de monetização, desenho do caminho (o que construir ou modernizar primeiro, com investimento e prazo) e ordem de ataque.
+
+- Página da sessão: https://www.zoenlabs.com.br/sessao-estrategica
+- Formulário de aplicação: https://www.zoenlabs.com.br/#aplicacao
+
+## Método PONTE
+
+Método próprio da ZoenLabs, em cinco etapas:
+
+1. **Plano** — caso de negócio antes de escrever código: onde está a monetização, qual o retorno esperado e o que precisa existir para o projeto pagar a conta.
+2. **Orquestração** — squad sob medida montado e gerido pela ZoenLabs, sem inchar a folha do cliente.
+3. **Navegação** — execução com governança de grandes empresas e visibilidade real do progresso.
+4. **Transferência** — entrega com handover documentado: o cliente sabe o que recebeu, como funciona e como operar.
+5. **Evolução** — sustentação e melhoria contínua em contrato recorrente depois do lançamento.
+
+## Serviços
+
+- Plataformas e produtos digitais, do caso de negócio ao lançamento
+- Desenvolvimento de marketplaces e e-commerce integrado
+- Modernização de sistemas existentes
+- Integrações entre sistemas, ERPs, marketplaces, logística e canais de atendimento
+- Automação de processos e aplicação de inteligência artificial
+- Sustentação e evolução contínua em contrato recorrente
+- Advisory em investimentos tecnológicos e diligências de M&A
+
+## Cases
+
+- **LiveCars** (https://livecars.com.br) — marketplace que transforma a compra de carros com vendas em lives, em tempo real, e jornada de compra segura. Em desenvolvimento: caso de negócio, squad completo e gestão da ZoenLabs.
+- **Lymr** (https://lymr.com.br) — e-commerce de creatina em gummies, no ar, com consultoria de processo de negócio e integrações a Bling, FastLog, Mercado Livre, Shopee, Meta com loja no Instagram e WhatsApp com IA. Estrutura automatizada, com baixa complexidade operacional.
+
+## Páginas
+
+- [Início](https://www.zoenlabs.com.br/): posicionamento, método PONTE, cases e formulário da sessão estratégica
+- [Termos de Uso](https://www.zoenlabs.com.br/termos)
+- [Política de Privacidade](https://www.zoenlabs.com.br/politica-de-privacidade)
+
+## Perguntas frequentes
+
+**O que a ZoenLabs faz?** Desenha o caso de negócio, monta o squad, entrega a plataforma funcionando e segue evoluindo o sistema em contrato recorrente.
+
+**Para quem é?** Para donos, sócios e diretores de empresas em crescimento que querem transformar tecnologia em receita.
+
+**É terceirização de desenvolvimento?** Não. É transformação digital com dono, com governança de nível executivo e responsabilidade pelo resultado.
+
+**Quanto custa a sessão estratégica?** É gratuita, dura 30 minutos e não gera compromisso.

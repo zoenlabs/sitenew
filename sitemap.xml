@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://zoenlabs.com.br/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.zoenlabs.com.br/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.zoenlabs.com.br/assets/img/og-zoenlabs.jpg</image:loc>
+      <image:title>ZoenLabs, transformação digital com dono</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zoenlabs.com.br/assets/img/livecars-logo.png</image:loc>
+      <image:title>Case LiveCars, marketplace de carros com vendas ao vivo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.zoenlabs.com.br/assets/img/lymr-case.jpg</image:loc>
+      <image:title>Case Lymr, e-commerce integrado e automatizado</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://www.zoenlabs.com.br/assets/img/video-thumb.jpg</video:thumbnail_loc>
+      <video:title>ZoenLabs, transformação digital com dono</video:title>
+      <video:description>Vídeo institucional da ZoenLabs: ajudamos negócios a se desenvolverem e monetizarem em cima de tecnologia, da ideia à plataforma no ar, com squad completo e gestão de nível executivo.</video:description>
+      <video:content_loc>https://pub-3c0c7295cc89480287b4f5bda8455d27.r2.dev/ZoenLabs.mp4</video:content_loc>
+      <video:duration>55</video:duration>
+      <video:publication_date>2026-07-13T09:00:00-03:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:platform relationship="allow">web mobile tv</video:platform>
+    </video:video>
   </url>
   <url>
-    <loc>https://zoenlabs.com.br/termos</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.zoenlabs.com.br/termos</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://zoenlabs.com.br/politica-de-privacidade</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://www.zoenlabs.com.br/politica-de-privacidade</loc>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

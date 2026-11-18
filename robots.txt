@@ -4,7 +4,7 @@
 User-agent: *
 Allow: /
 
-# Motores de busca generativos / IA (queremos ser citados/encontrados)
+# Motores de busca generativos / IA (queremos ser citados e encontrados)
 User-agent: GPTBot
 Allow: /
 
@@ -32,6 +32,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 
@@ -41,4 +44,11 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://zoenlabs.com.br/sitemap.xml
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Resumo do site para modelos de linguagem: /llms.txt e /llms-full.txt
+Sitemap: https://www.zoenlabs.com.br/sitemap.xml
